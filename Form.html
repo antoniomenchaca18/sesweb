@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <h1>Formulario de Registro</h1>
+
+                <form action="index.html" method="post">
+
+                    <div class="mb-3">
+                        <label for="txtname" class="form-label">Nombre completo:</label>
+                        <input type="text" id="txtname" name="txtname" class="form-control" placeholder="Ingresalo aqui" required> 
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="txtname" class="form-label">Telefono:</label>
+                        <input type="tel" id="telnum" name="telnum" class="form-control" placeholder="10 Digitos" pattern="[0-9]{10}"  >  
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="txtemail" class="form-label">E-mail:</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="email" id="txtemail" name="txtemail" class="form-control" placeholder="Ingresalo aqui" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <input type="password" id="Confirmar" name="Confirmars" class="form-control" placeholder="Ingresa min. 8 caracteres">  
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Confirmar contraseña:</label>
+                        <input type="password" id="password1" name="password1" class="form-control" placeholder="Confirmar aqui">  
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Fecha de nacimiento:</label>
+                        <input type="date" id="birthdate" class="form-control" name="birthdate" placeholder="Ingresalo aqui">  
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="txtname" class="form-label">Genero:</label>
+                        <br>
+                        <input type="radio" id="masc" class="form-check-input" name="genero" value="m"> 
+                        <label for="masc">Masculino</label><br>
+                        <input type="radio" id="fem" class="form-check-input" name="genero" value="f"> 
+                        <label for="fem" class="form-check-label">Femenino</label><br>
+                        <input type="radio" id="nb" class="form-check-input" name="genero" value="nb"> 
+                        <label for="nb" class="form-check-label">No-binario</label>
+                    </div>
+
+                    <div class="form-check mt-3 mb-3">
+                        <input type="checkbox" class="form-check-input" id="terms" name="terms"> 
+                        <label for="terms" class="form-label">Acepto los terminos y condiciones</label><br>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn btn-primary">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
